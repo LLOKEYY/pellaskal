@@ -1,370 +1,327 @@
 <!DOCTYPE html>
 <html lang="el">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pellaskal | Ενοικίαση & Τοποθέτηση Σκαλωσιών</title>
-    <meta
-      name="description"
-      content="Η Pellaskal προσφέρει επαγγελματικές λύσεις σκαλωσιών με έμφαση στην ασφάλεια, τη συνέπεια και την ποιότητα εξυπηρέτησης."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-progress"></div>
-
-    <header class="site-header" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pellaskal | Τοποθέτηση Σκαλωσιών</title>
+  <meta
+    name="description"
+    content="Pellaskal - Εξειδικευμένες λύσεις τοποθέτησης σκαλωσιών με έμφαση στην ασφάλεια, τη συνέπεια και την επαγγελματική εξυπηρέτηση."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="header">
       <div class="container nav">
         <a href="index.html" class="logo">
           <span class="logo-mark">P</span>
-          <span class="logo-text">Pellaskal</span>
+          <div class="logo-text">
+            <strong>Pellaskal</strong>
+            <span>Τοποθέτηση Σκαλωσιών</span>
+          </div>
         </a>
 
         <nav class="desktop-nav">
           <a href="#hero">Αρχική</a>
           <a href="#about">Ποιοι Είμαστε</a>
           <a href="#info">Πληροφορίες</a>
-          <a href="contact.html" target="_blank" rel="noopener noreferrer">Επικοινωνία</a>
+          <a href="epikoinonia.html" class="nav-button">Επικοινωνία</a>
         </nav>
 
-        <button class="menu-toggle" aria-label="Άνοιγμα μενού">
+        <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
 
-      <div class="mobile-nav">
+      <div class="mobile-menu" id="mobileMenu">
         <a href="#hero">Αρχική</a>
         <a href="#about">Ποιοι Είμαστε</a>
         <a href="#info">Πληροφορίες</a>
-        <a href="contact.html" target="_blank" rel="noopener noreferrer">Επικοινωνία</a>
+        <a href="epikoinonia.html">Επικοινωνία</a>
       </div>
     </header>
 
     <main>
-      <section class="hero hero-redesign" id="hero">
-  <div class="hero-grid-overlay"></div>
-  <div class="hero-orb hero-orb-1"></div>
-  <div class="hero-orb hero-orb-2"></div>
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">PELLASKAL</p>
+            <h1>
+              Ασφαλής και επαγγελματική
+              <span>τοποθέτηση σκαλωσιών</span>
+              για κάθε έργο.
+            </h1>
+            <p class="hero-text">
+              Παρέχουμε αξιόπιστες λύσεις τοποθέτησης σκαλωσιών με συνέπεια,
+              τεχνική υπευθυνότητα και έμφαση στην ασφάλεια σε κάθε στάδιο του έργου.
+            </p>
 
-  <div class="container">
-    <div class="hero-topbar reveal">
-      <div class="hero-topbar-card">
-        <span class="mini-label">PELLASKAL</span>
-        <p>Επαγγελματικές λύσεις σκαλωσιών με έμφαση στην ασφάλεια και τη συνέπεια.</p>
-      </div>
-
-      <div class="hero-topbar-card right">
-        <span class="mini-label">ΑΜΕΣΗ ΕΠΙΚΟΙΝΩΝΙΑ</span>
-        <div class="hero-top-contacts">
-          <a href="tel:6944146855">6944146855</a>
-          <a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-layout">
-      <div class="hero-main reveal">
-        <p class="eyebrow">PELLASKAL</p>
-
-        <h1>
-          Σταθερές βάσεις
-          <span>για έργα</span>
-          που απαιτούν σοβαρότητα.
-        </h1>
-
-        <p class="hero-description">
-          Η Pellaskal προσφέρει επαγγελματική προσέγγιση, άμεση εξυπηρέτηση και
-          υπεύθυνη παρουσία στον χώρο των σκαλωσιών, με καθαρή επικοινωνία και
-          έμφαση στην ποιότητα κάθε συνεργασίας.
-        </p>
-
-        <div class="hero-cta-row">
-          <a href="#info" class="btn btn-primary hero-main-btn">Ζητήστε προσφορά</a>
-          <a
-            href="contact.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hero-link-btn"
-          >
-            Άνοιγμα σελίδας επικοινωνίας
-          </a>
-        </div>
-
-        <div class="hero-inline-points">
-          <div class="inline-point">
-            <strong>Ασφάλεια</strong>
-            <span>Επαγγελματική και υπεύθυνη προσέγγιση</span>
-          </div>
-          <div class="inline-point">
-            <strong>Συνέπεια</strong>
-            <span>Καθαρή συνεννόηση και σωστή εξυπηρέτηση</span>
-          </div>
-          <div class="inline-point">
-            <strong>Ποιότητα</strong>
-            <span>Σοβαρή εικόνα και αξιόπιστη συνεργασία</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-side reveal delay-1">
-        <div class="hero-showcase">
-          <div class="hero-showcase-top">
-            <span class="showcase-badge">Professional Presence</span>
-            <h3>Σύγχρονη εταιρική εικόνα για μια επιχείρηση που θέλει να ξεχωρίζει.</h3>
-          </div>
-
-          <div class="showcase-stack">
-            <div class="showcase-box large">
-              <span>01</span>
-              <h4>Οργάνωση έργου</h4>
-              <p>Σωστή συνεννόηση και επαγγελματική διαχείριση κάθε ανάγκης.</p>
+            <div class="hero-actions">
+              <a href="#info" class="btn btn-primary">Ζητήστε ενημέρωση</a>
+              <a href="epikoinonia.html" class="btn btn-secondary">Επικοινωνία</a>
             </div>
 
-            <div class="showcase-row">
-              <div class="showcase-box">
-                <span>02</span>
-                <h4>Άμεση ανταπόκριση</h4>
+            <div class="hero-badges">
+              <div class="badge-card">
+                <strong>Ασφάλεια</strong>
+                <span>Προτεραιότητα σε κάθε εργασία</span>
               </div>
-              <div class="showcase-box">
-                <span>03</span>
-                <h4>Καθαρή συνεργασία</h4>
+              <div class="badge-card">
+                <strong>Συνέπεια</strong>
+                <span>Υπεύθυνη εξυπηρέτηση και άμεση ανταπόκριση</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay">
+            <div class="hero-card floating-card">
+              <div class="hero-card-top">
+                <span class="mini-label">Professional Service</span>
+                <span class="status-dot"></span>
+              </div>
+              <h3>Στήριξη έργων με σωστή οργάνωση και σταθερότητα</h3>
+              <p>
+                Σύγχρονη παρουσίαση υπηρεσιών με καθαρό εταιρικό ύφος,
+                εμπνευσμένη από το reference style αλλά προσαρμοσμένη στο Pellaskal.
+              </p>
+
+              <div class="hero-stats">
+                <div>
+                  <strong>100%</strong>
+                  <span>focus στην τοποθέτηση</span>
+                </div>
+                <div>
+                  <strong>2</strong>
+                  <span>άμεσα διαθέσιμα τηλέφωνα</span>
+                </div>
               </div>
             </div>
 
-            <div class="showcase-box accent-box">
-              <span class="accent-title">Επικοινωνία</span>
-              <a href="tel:6944146855">6944146855</a>
-              <a href="tel:6981634808">6981634808</a>
-              <a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a>
-            </div>
+            <div class="hero-shape hero-shape-one"></div>
+            <div class="hero-shape hero-shape-two"></div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="hero-bottom-strip reveal delay-2">
-      <div class="hero-bottom-card">
-        <span class="bottom-title">Ιδιοκτήτες</span>
-        <p>Αλεξανδριδου Ελλη &amp; Qura Gentian</p>
-      </div>
-
-      <div class="hero-bottom-card">
-        <span class="bottom-title">Εστίαση</span>
-        <p>Σοβαρότητα, ασφάλεια και επαγγελματική εξυπηρέτηση</p>
-      </div>
-
-      <div class="hero-bottom-card floating-cta-card">
-        <span class="bottom-title">Γρήγορη ενέργεια</span>
-        <a href="#info">Στείλτε μήνυμα τώρα</a>
-      </div>
-    </div>
-  </div>
-</section>
       <section class="section intro-strip reveal">
-        <div class="container strip-grid">
-          <div class="strip-item">
-            <h3>Αξιοπιστία</h3>
-            <p>Κάθε συνεργασία βασίζεται στη σοβαρότητα και στην υπεύθυνη παρουσία.</p>
+        <div class="container intro-grid">
+          <div class="intro-card">
+            <span>Επαγγελματισμός</span>
+            <p>Σοβαρή προσέγγιση σε κάθε συνεργασία.</p>
           </div>
-          <div class="strip-item">
-            <h3>Οργάνωση</h3>
-            <p>Σαφής συνεννόηση και επαγγελματική διαχείριση κάθε ανάγκης.</p>
+          <div class="intro-card">
+            <span>Αξιοπιστία</span>
+            <p>Καθαρή επικοινωνία και υπεύθυνη εξυπηρέτηση.</p>
           </div>
-          <div class="strip-item">
-            <h3>Ποιότητα</h3>
-            <p>Στόχος μας είναι ένα αποτέλεσμα που εμπνέει εμπιστοσύνη.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section about-section" id="about">
-        <div class="container two-col">
-          <div class="section-copy reveal">
-            <p class="eyebrow">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</p>
-            <h2>Η Pellaskal είναι ένας συνεργάτης που δίνει προτεραιότητα στην ασφάλεια και τη συνέπεια.</h2>
-            <p>
-              Δραστηριοποιούμαστε στον χώρο των σκαλωσιών με επαγγελματισμό,
-              υπευθυνότητα και έμφαση στη σωστή εξυπηρέτηση κάθε πελάτη. Η
-              φιλοσοφία μας βασίζεται στην καθαρή επικοινωνία, στη σωστή
-              οργάνωση και στην προσεγμένη υποστήριξη κάθε έργου.
-            </p>
-            <p>
-              Επιδιώκουμε κάθε συνεργασία να χαρακτηρίζεται από αξιοπιστία,
-              άμεση ανταπόκριση και επαγγελματική εικόνα, ώστε ο πελάτης να
-              νιώθει σιγουριά από την πρώτη επικοινωνία έως και την ολοκλήρωση
-              της εργασίας.
-            </p>
-          </div>
-
-          <div class="feature-stack reveal delay-1">
-            <div class="feature-card">
-              <h3>Επαγγελματική προσέγγιση</h3>
-              <p>
-                Αντιμετωπίζουμε κάθε έργο με σοβαρότητα, προσοχή στη λεπτομέρεια
-                και σεβασμό στις απαιτήσεις του.
-              </p>
-            </div>
-            <div class="feature-card">
-              <h3>Άμεση επικοινωνία</h3>
-              <p>
-                Δίνουμε σημασία στην καθαρή και γρήγορη επικοινωνία για σωστή
-                συνεννόηση και καλύτερη εξυπηρέτηση.
-              </p>
-            </div>
-            <div class="feature-card">
-              <h3>Έμφαση στην ασφάλεια</h3>
-              <p>
-                Η σταθερότητα, η υπευθυνότητα και η επαγγελματική συνέπεια είναι
-                στον πυρήνα της δουλειάς μας.
-              </p>
-            </div>
+          <div class="intro-card">
+            <span>Ποιότητα</span>
+            <p>Λύσεις που στηρίζουν σωστά κάθε έργο.</p>
           </div>
         </div>
       </section>
 
-      <section class="section services-preview">
-        <div class="container">
+      <section class="section about" id="about">
+        <div class="container section-grid">
           <div class="section-heading reveal">
-            <p class="eyebrow">ΤΙ ΜΑΣ ΞΕΧΩΡΙΖΕΙ</p>
-            <h2>Σωστή συνεργασία, καθαρή εικόνα, αξιόπιστη εξυπηρέτηση.</h2>
+            <p class="eyebrow">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</p>
+            <h2>Η Pellaskal είναι δίπλα σε κάθε έργο με υπευθυνότητα και συνέπεια.</h2>
+          </div>
+
+          <div class="about-content reveal reveal-delay">
+            <p>
+              Η <strong>Pellaskal</strong> δραστηριοποιείται στον χώρο της
+              τοποθέτησης σκαλωσιών, προσφέροντας επαγγελματικές λύσεις με
+              στόχο την ασφάλεια, τη σωστή οργάνωση και την αξιόπιστη υποστήριξη
+              κάθε τεχνικού έργου.
+            </p>
+            <p>
+              Η προσέγγισή μας βασίζεται στη λεπτομέρεια, στην υπεύθυνη εξυπηρέτηση
+              και στη δημιουργία σχέσεων εμπιστοσύνης με κάθε πελάτη και συνεργάτη.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div>
+                  <strong>Έμφαση στην ασφάλεια</strong>
+                  <p>Σωστός σχεδιασμός και υπεύθυνη εφαρμογή σε κάθε στάδιο.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div>
+                  <strong>Επαγγελματική συνεργασία</strong>
+                  <p>Καθαρή συνεννόηση, άμεση ανταπόκριση και οργανωμένη παρουσία.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <div>
+                  <strong>Σύγχρονη εταιρική εικόνα</strong>
+                  <p>Corporate αισθητική με καθαρή δομή και φιλική εμπειρία χρήστη.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">ΤΙ ΠΡΟΣΦΕΡΟΥΜΕ</p>
+            <h2>Υπηρεσίες με στόχο τη σταθερότητα, την οργάνωση και την ασφάλεια.</h2>
           </div>
 
           <div class="cards-grid">
             <article class="info-card reveal">
               <span class="card-number">01</span>
-              <h3>Σοβαρότητα στη συνεργασία</h3>
+              <h3>Τοποθέτηση Σκαλωσιών</h3>
               <p>
-                Χτίζουμε σχέσεις εμπιστοσύνης με πελάτες που αναζητούν σωστή
-                επαγγελματική στάση και συνέπεια.
+                Εστίαση στην ασφαλή και σωστή τοποθέτηση, προσαρμοσμένη στις
+                απαιτήσεις κάθε έργου.
               </p>
             </article>
 
-            <article class="info-card reveal delay-1">
+            <article class="info-card reveal reveal-delay">
               <span class="card-number">02</span>
-              <h3>Εστίαση στις ανάγκες του έργου</h3>
+              <h3>Συνεννόηση & Υποστήριξη</h3>
               <p>
-                Κάθε εργασία απαιτεί σωστή προσέγγιση, οργανωμένη επικοινωνία και
-                ξεκάθαρη κατανόηση των απαιτήσεων.
+                Άμεση επικοινωνία για σωστή κατανόηση των αναγκών και οργανωμένη
+                εξυπηρέτηση από την αρχή έως το τέλος.
               </p>
             </article>
 
-            <article class="info-card reveal delay-2">
+            <article class="info-card reveal reveal-delay-2">
               <span class="card-number">03</span>
-              <h3>Εικόνα επαγγελματισμού</h3>
+              <h3>Επαγγελματική Παρουσία</h3>
               <p>
-                Η Pellaskal παρουσιάζεται με τρόπο καθαρό, σύγχρονο και αξιόπιστο,
-                όπως αρμόζει σε μια σοβαρή επιχείρηση.
+                Καθαρή, σοβαρή και αξιόπιστη προσέγγιση που ενισχύει την εικόνα της
+                επιχείρησης και εμπνέει εμπιστοσύνη.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section contact-overview" id="info">
-        <div class="container contact-layout">
-          <div class="contact-copy reveal">
-            <p class="eyebrow">ΠΛΗΡΟΦΟΡΙΕΣ</p>
-            <h2>Επικοινωνήστε μαζί μας για άμεση εξυπηρέτηση.</h2>
-            <p>
-              Μπορείτε να επικοινωνήσετε μαζί μας τηλεφωνικά, μέσω email ή από τη
-              φόρμα επικοινωνίας. Είμαστε διαθέσιμοι για να συζητήσουμε τις
-              ανάγκες σας και να σας εξυπηρετήσουμε άμεσα.
-            </p>
-
-            <div class="contact-list">
-              <div class="contact-item">
-                <span class="contact-label">Τηλέφωνα</span>
-                <a href="tel:6944146855">6944146855</a>
-                <a href="tel:6981634808">6981634808</a>
-              </div>
-
-              <div class="contact-item">
-                <span class="contact-label">Email</span>
-                <a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a>
-              </div>
-
-              <div class="contact-item">
-                <span class="contact-label">Ιδιοκτήτες</span>
-                <p>Αλεξανδριδου Ελλη</p>
-                <p>Qura Gentian</p>
-              </div>
-            </div>
-
-            <a
-              href="contact.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-primary"
-            >
-              Άνοιγμα σελίδας επικοινωνίας
-            </a>
+      <section class="section contact-preview" id="info">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">ΠΛΗΡΟΦΟΡΙΕΣ & ΕΠΙΚΟΙΝΩΝΙΑ</p>
+            <h2>Επικοινωνήστε μαζί μας για περισσότερες πληροφορίες.</h2>
           </div>
 
-          <div class="contact-widgets">
-            <div class="form-card reveal delay-1">
-              <h3>Στείλτε μήνυμα</h3>
-              <form
-                name="pellaskal-contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                class="contact-form"
-              >
-                <input type="hidden" name="form-name" value="pellaskal-contact" />
-                <p class="hidden-field">
-                  <label>
-                    Μην το συμπληρώσετε αυτό:
-                    <input name="bot-field" />
-                  </label>
-                </p>
+          <div class="contact-grid">
+            <div class="contact-panel reveal">
+              <h3>Στοιχεία Επικοινωνίας</h3>
 
-                <div class="form-row">
-                  <label for="name">Ονοματεπώνυμο</label>
-                  <input type="text" id="name" name="name" placeholder="Το όνομά σας" required />
+              <div class="contact-list">
+                <div class="contact-row">
+                  <span>Τηλέφωνα</span>
+                  <div>
+                    <a href="tel:6944146855">6944146855</a><br />
+                    <a href="tel:6981634808">6981634808</a>
+                  </div>
                 </div>
 
-                <div class="form-row">
-                  <label for="phone">Τηλέφωνο</label>
-                  <input type="tel" id="phone" name="phone" placeholder="Το τηλέφωνό σας" />
+                <div class="contact-row">
+                  <span>Email</span>
+                  <div>
+                    <a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a>
+                  </div>
                 </div>
 
-                <div class="form-row">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Το email σας" required />
+                <div class="contact-row">
+                  <span>Ιδιοκτήτες</span>
+                  <div>
+                    Αλεξανδρίδου Έλλη<br />
+                    Qura Gentian
+                  </div>
                 </div>
+              </div>
 
-                <div class="form-row">
-                  <label for="message">Μήνυμα</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    placeholder="Γράψτε το μήνυμά σας"
-                    required
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary full-width">
-                  Αποστολή
-                </button>
-              </form>
+              <a href="epikoinonia.html" class="btn btn-primary full-btn">
+                Μετάβαση στη σελίδα Επικοινωνίας
+              </a>
             </div>
 
-            <div class="map-card reveal delay-2">
-              <h3>Χάρτης</h3>
-              <div class="map-wrap">
-                <iframe
-                  src="https://www.google.com/maps?q=Pella,%20Greece&z=10&output=embed"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Pellaskal Map"
-                ></iframe>
+            <div class="form-map-wrap">
+              <div class="form-panel reveal reveal-delay">
+                <h3>Φόρμα Επικοινωνίας</h3>
+                <p>
+                  Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο.
+                </p>
+
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  class="netlify-form"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p class="hidden-field">
+                    <label>
+                      Don’t fill this out if you're human:
+                      <input name="bot-field" />
+                    </label>
+                  </p>
+
+                  <div class="form-group">
+                    <label for="name">Ονοματεπώνυμο</label>
+                    <input type="text" id="name" name="name" placeholder="Το όνομά σας" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Τηλέφωνο</label>
+                    <input type="text" id="phone" name="phone" placeholder="Το τηλέφωνό σας" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Το email σας" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Μήνυμα</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Πείτε μας λίγα λόγια για αυτό που χρειάζεστε"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary full-btn">Αποστολή</button>
+                </form>
+              </div>
+
+              <div class="map-panel reveal reveal-delay-2">
+                <h3>Χάρτης</h3>
+                <div class="map-embed">
+                  <iframe
+                    src="https://www.google.com/maps?q=Pella%20Greece&z=10&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Χάρτης Pellaskal"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -372,33 +329,22 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
+    <footer class="footer">
+      <div class="container footer-wrap">
         <div>
-          <h3>Pellaskal</h3>
-          <p>
-            Επαγγελματικές λύσεις σκαλωσιών με έμφαση στην ασφάλεια, τη
-            συνέπεια και την υπεύθυνη εξυπηρέτηση.
-          </p>
+          <strong>Pellaskal</strong>
+          <p>Τοποθέτηση Σκαλωσιών με επαγγελματισμό και συνέπεια.</p>
         </div>
 
-        <div>
-          <h4>Επικοινωνία</h4>
-          <p><a href="tel:6944146855">6944146855</a></p>
-          <p><a href="tel:6981634808">6981634808</a></p>
-          <p><a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a></p>
-        </div>
-
-        <div>
-          <h4>Πλοήγηση</h4>
-          <p><a href="#hero">Αρχική</a></p>
-          <p><a href="#about">Ποιοι Είμαστε</a></p>
-          <p><a href="#info">Πληροφορίες</a></p>
-          <p><a href="contact.html" target="_blank" rel="noopener noreferrer">Επικοινωνία</a></p>
+        <div class="footer-links">
+          <a href="index.html">Αρχική</a>
+          <a href="#about">Ποιοι Είμαστε</a>
+          <a href="epikoinonia.html">Επικοινωνία</a>
         </div>
       </div>
     </footer>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
