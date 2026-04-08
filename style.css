@@ -442,7 +442,8 @@ img {
 .about-image {
   width: 100%;
   height: 340px;
-  object-fit: cover;
+ object-fit: contain;
+background: #ffffff;
   display: block;
 }
 
