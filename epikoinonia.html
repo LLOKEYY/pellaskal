@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pellaskal | Επικοινωνία</title>
+  <meta
+    name="description"
+    content="Σελίδα επικοινωνίας της Pellaskal με στοιχεία, φόρμα επικοινωνίας και ενσωματωμένο χάρτη."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">P</span>
+          <div class="logo-text">
+            <strong>Pellaskal</strong>
+            <span>Τοποθέτηση Σκαλωσιών</span>
+          </div>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html">Αρχική</a>
+          <a href="index.html#about">Ποιοι Είμαστε</a>
+          <a href="epikoinonia.html" class="nav-button">Επικοινωνία</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Αρχική</a>
+        <a href="index.html#about">Ποιοι Είμαστε</a>
+        <a href="epikoinonia.html">Επικοινωνία</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-content reveal">
+          <p class="eyebrow">ΕΠΙΚΟΙΝΩΝΙΑ</p>
+          <h1>Είμαστε εδώ για να σας εξυπηρετήσουμε.</h1>
+          <p>
+            Επικοινωνήστε μαζί μας για πληροφορίες, διευκρινίσεις ή για να συζητήσουμε
+            τις ανάγκες του έργου σας.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-page-grid">
+          <div class="contact-main-card reveal">
+            <h2>Στοιχεία Επικοινωνίας</h2>
+            <p class="section-intro">
+              Μπορείτε να μας καλέσετε ή να μας στείλετε μήνυμα μέσω της φόρμας.
+            </p>
+
+            <div class="contact-list large">
+              <div class="contact-row">
+                <span>Τηλέφωνο 1</span>
+                <div><a href="tel:6944146855">6944146855</a></div>
+              </div>
+
+              <div class="contact-row">
+                <span>Τηλέφωνο 2</span>
+                <div><a href="tel:6981634808">6981634808</a></div>
+              </div>
+
+              <div class="contact-row">
+                <span>Email</span>
+                <div><a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a></div>
+              </div>
+
+              <div class="contact-row">
+                <span>Ιδιοκτήτες</span>
+                <div>
+                  Αλεξανδρίδου Έλλη<br />
+                  Qura Gentian
+                </div>
+              </div>
+            </div>
+
+            <div class="mini-cards">
+              <div class="mini-card">
+                <strong>Άμεση Επικοινωνία</strong>
+                <p>Γρήγορη και ξεκάθαρη ανταπόκριση.</p>
+              </div>
+              <div class="mini-card">
+                <strong>Επαγγελματική Προσέγγιση</strong>
+                <p>Υπευθυνότητα και συνέπεια σε κάθε επικοινωνία.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-side reveal reveal-delay">
+            <div class="form-panel contact-page-form">
+              <h3>Στείλτε μας μήνυμα</h3>
+              <p>Συμπληρώστε τη φόρμα και θα σας απαντήσουμε το συντομότερο δυνατό.</p>
+
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                class="netlify-form"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <p class="hidden-field">
+                  <label>
+                    Don’t fill this out if you're human:
+                    <input name="bot-field" />
+                  </label>
+                </p>
+
+                <div class="form-group">
+                  <label for="page-name">Ονοματεπώνυμο</label>
+                  <input type="text" id="page-name" name="name" placeholder="Το όνομά σας" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="page-phone">Τηλέφωνο</label>
+                  <input type="text" id="page-phone" name="phone" placeholder="Το τηλέφωνό σας" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="page-email">Email</label>
+                  <input type="email" id="page-email" name="email" placeholder="Το email σας" />
+                </div>
+
+                <div class="form-group">
+                  <label for="page-message">Μήνυμα</label>
+                  <textarea
+                    id="page-message"
+                    name="message"
+                    rows="6"
+                    placeholder="Γράψτε το μήνυμά σας"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-btn">Αποστολή Μηνύματος</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section map-section">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">ΤΟΠΟΘΕΣΙΑ</p>
+            <h2>Δείτε τον χάρτη.</h2>
+          </div>
+
+          <div class="large-map reveal reveal-delay">
+            <iframe
+              src="https://www.google.com/maps?q=Pella%20Greece&z=10&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Χάρτης Pellaskal"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <strong>Pellaskal</strong>
+          <p>Τοποθέτηση Σκαλωσιών με επαγγελματισμό και συνέπεια.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Αρχική</a>
+          <a href="index.html#about">Ποιοι Είμαστε</a>
+          <a href="epikoinonia.html">Επικοινωνία</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
