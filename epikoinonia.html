@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="siteHeader">
     <div class="container nav">
       <a href="index.html" class="logo" aria-label="Pellaskal">
         <img src="logo.png" alt="Pellaskal" class="logo-image" />
@@ -29,7 +29,7 @@
         <a href="epikoinonia.html" class="nav-button">Επικοινωνία</a>
       </nav>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού">
+      <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="mobileMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -45,6 +45,8 @@
 
   <main>
     <section class="page-hero section section-surface-light">
+      <div class="section-glow section-glow-soft" aria-hidden="true"></div>
+
       <div class="container page-hero-content reveal">
         <p class="eyebrow">ΕΠΙΚΟΙΝΩΝΙΑ</p>
         <h1>Επικοινωνήστε μαζί μας</h1>
@@ -125,22 +127,22 @@
 
               <div class="form-group">
                 <label for="name">Ονοματεπώνυμο</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" placeholder="Γράψτε το ονοματεπώνυμό σας" required />
               </div>
 
               <div class="form-group">
                 <label for="phone">Τηλέφωνο</label>
-                <input type="text" id="phone" name="phone" required />
+                <input type="text" id="phone" name="phone" placeholder="Π.χ. 69XXXXXXXX" required />
               </div>
 
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" placeholder="Το email σας" />
               </div>
 
               <div class="form-group">
                 <label for="message">Μήνυμα</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <textarea id="message" name="message" rows="6" placeholder="Περιγράψτε μας το έργο ή την ανάγκη σας" required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary full-btn">Αποστολή</button>
