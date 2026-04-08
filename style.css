@@ -1,6 +1,7 @@
 :root {
-  --bg: #f6f9fe;
-  --bg-soft: #eef4fb;
+  --bg: #f4f7fb;
+  --bg-soft: #edf3fa;
+  --bg-soft-2: #e6eef8;
   --white: #ffffff;
   --text: #10233e;
   --text-soft: #5d6f87;
@@ -28,9 +29,7 @@ html {
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
-  background:
-    radial-gradient(circle at top right, rgba(36, 79, 144, 0.08), transparent 28%),
-    linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #f8fbff 0%, #f2f6fb 100%);
   color: var(--text);
 }
 
@@ -41,6 +40,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .site-wrapper {
@@ -57,12 +57,12 @@ img {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid rgba(22, 61, 116, 0.08);
 }
 
 .nav {
-  min-height: 84px;
+  min-height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,46 +75,17 @@ img {
   gap: 16px;
 }
 
-.logo-mark {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: linear-gradient(135deg, #163d74 0%, #28589c 100%);
-  color: white;
-  box-shadow: 0 14px 28px rgba(22, 61, 116, 0.16);
-}
-
-.logo-mark-large {
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
+.logo-image {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
   flex-shrink: 0;
-}
-
-.logo-p {
-  position: relative;
-  z-index: 2;
-  font-size: 1.45rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.logo-line {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transform: rotate(18deg);
-  opacity: 0.8;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.02;
+  line-height: 1.03;
 }
 
 .logo-text strong {
@@ -139,7 +110,7 @@ img {
   padding: 12px 16px;
   border-radius: 999px;
   color: var(--text-soft);
-  font-weight: 600;
+  font-weight: 700;
   transition: var(--transition);
 }
 
@@ -190,21 +161,39 @@ img {
   display: block;
   padding: 14px 10px;
   color: var(--text-soft);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .mobile-menu.open {
   display: block;
 }
 
+.section-surface {
+  position: relative;
+}
+
+.section-surface-light {
+  background:
+    linear-gradient(90deg, #f7faff 0%, #f7faff 52%, #eef3f9 52%, #eef3f9 100%);
+}
+
+.section-surface-white {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+.section-surface-soft {
+  background:
+    linear-gradient(180deg, #eef4fb 0%, #e9f0f8 100%);
+}
+
 .hero,
 .page-hero {
-  position: relative;
   overflow: hidden;
 }
 
 .hero {
-  padding: 84px 0 64px;
+  padding: 90px 0 76px;
 }
 
 .hero-grid {
@@ -301,7 +290,7 @@ img {
 }
 
 .hero-highlight {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.84);
   border: 1px solid rgba(22, 61, 116, 0.08);
   border-radius: 20px;
   padding: 20px 22px;
@@ -323,7 +312,6 @@ img {
 }
 
 .hero-visual {
-  position: relative;
   min-height: 520px;
   display: flex;
   align-items: center;
@@ -331,10 +319,8 @@ img {
 }
 
 .hero-card {
-  position: relative;
-  z-index: 2;
   width: min(100%, 470px);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(22, 61, 116, 0.08);
   border-radius: 28px;
   padding: 28px;
@@ -405,35 +391,12 @@ img {
   font-size: 0.9rem;
 }
 
-.hero-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(2px);
-}
-
-.hero-shape-one {
-  width: 290px;
-  height: 290px;
-  background: radial-gradient(circle, rgba(36, 79, 144, 0.2), transparent 70%);
-  top: 40px;
-  right: 30px;
-}
-
-.hero-shape-two {
-  width: 230px;
-  height: 230px;
-  background: radial-gradient(circle, rgba(22, 61, 116, 0.12), transparent 72%);
-  bottom: 20px;
-  left: 20px;
-}
-
 .floating-card {
   animation: floatCard 5s ease-in-out infinite;
 }
 
 @keyframes floatCard {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0px);
   }
   50% {
@@ -442,7 +405,7 @@ img {
 }
 
 .section {
-  padding: 88px 0;
+  padding: 92px 0;
 }
 
 .info-card,
@@ -451,28 +414,9 @@ img {
 .map-panel,
 .contact-main-card,
 .mini-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(22, 61, 116, 0.08);
   box-shadow: var(--shadow-soft);
-}
-
-.intro-card {
-  border-radius: var(--radius-md);
-  padding: 24px;
-}
-
-.intro-card span {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--primary);
-  font-weight: 800;
-  font-size: 1.05rem;
-}
-
-.intro-card p {
-  margin: 0;
-  color: var(--text-soft);
-  line-height: 1.7;
 }
 
 .section-grid {
@@ -520,7 +464,7 @@ img {
   gap: 16px;
   padding: 20px;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(22, 61, 116, 0.07);
 }
 
@@ -643,9 +587,18 @@ img {
   color: var(--primary);
 }
 
-.form-map-wrap {
-  display: grid;
-  gap: 24px;
+.info-note {
+  margin: 0 0 24px;
+  padding: 18px 18px;
+  border-radius: 18px;
+  background: #f3f7fd;
+  border: 1px solid rgba(22, 61, 116, 0.08);
+}
+
+.info-note p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.7;
 }
 
 .form-panel p {
@@ -707,7 +660,7 @@ img {
 }
 
 .map-embed {
-  height: 320px;
+  height: 400px;
 }
 
 .large-map {
@@ -715,7 +668,7 @@ img {
 }
 
 .page-hero {
-  padding: 90px 0 30px;
+  padding: 90px 0 40px;
 }
 
 .page-hero-content {
@@ -760,6 +713,7 @@ img {
 
 .footer {
   padding: 30px 0 44px;
+  background: linear-gradient(180deg, #f8fbff 0%, #f1f5fa 100%);
 }
 
 .footer-wrap {
@@ -824,6 +778,10 @@ img {
   .contact-page-form {
     position: static;
   }
+
+  .section-surface-light {
+    background: linear-gradient(180deg, #f7faff 0%, #eef3f9 100%);
+  }
 }
 
 @media (max-width: 860px) {
@@ -836,10 +794,10 @@ img {
   }
 
   .cards-grid,
-.mini-cards,
-.hero-highlights {
-  grid-template-columns: 1fr;
-}
+  .mini-cards,
+  .hero-highlights {
+    grid-template-columns: 1fr;
+  }
 
   .hero {
     padding-top: 56px;
@@ -864,26 +822,21 @@ img {
   }
 
   .nav {
-    min-height: 74px;
+    min-height: 76px;
   }
 
-.logo-mark-large {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-}
+  .logo-image {
+    width: 58px;
+    height: 58px;
+  }
 
-.logo-p {
-  font-size: 1.2rem;
-}
+  .logo-text strong {
+    font-size: 1.1rem;
+  }
 
-.logo-text strong {
-  font-size: 1.15rem;
-}
-
-.logo-text span {
-  font-size: 0.78rem;
-}
+  .logo-text span {
+    font-size: 0.76rem;
+  }
 
   .contact-row {
     grid-template-columns: 1fr;
