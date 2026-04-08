@@ -1030,8 +1030,8 @@ textarea {
 }
 
 .contact-page-form {
-  position: sticky;
-  top: 110px;
+  position: static;
+  top: auto;
 }
 
 .form-panel {
