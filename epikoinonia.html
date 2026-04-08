@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Επικοινωνία | Pellaskal</title>
+    <meta
+      name="description"
+      content="Επικοινωνήστε με την Pellaskal για υπηρεσίες τοποθέτησης σκαλωσιών."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">P</span>
+          <span class="logo-text">Pellaskal</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Αρχική</a>
+          <a href="epikoinonia.html" class="active">Επικοινωνία</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-content reveal">
+          <p class="eyebrow">ΕΠΙΚΟΙΝΩΝΙΑ</p>
+          <h1>Ας μιλήσουμε για το έργο σας</h1>
+          <p>
+            Είμαστε διαθέσιμοι για άμεση επικοινωνία σχετικά με τοποθέτηση
+            σκαλωσιών, απορίες, συνεργασίες και πληροφορίες για το έργο σας.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-page-grid">
+            <div class="contact-page-left reveal">
+              <div class="detail-card large">
+                <h2>Στοιχεία Επικοινωνίας</h2>
+                <div class="contact-list">
+                  <div class="contact-line">
+                    <span>Τηλέφωνο 1</span>
+                    <a href="tel:6944146855">6944146855</a>
+                  </div>
+                  <div class="contact-line">
+                    <span>Τηλέφωνο 2</span>
+                    <a href="tel:6981634808">6981634808</a>
+                  </div>
+                  <div class="contact-line">
+                    <span>Email</span>
+                    <a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-card large">
+                <h2>Υπεύθυνοι Επικοινωνίας</h2>
+                <div class="owners-grid">
+                  <div class="owner-box">
+                    <strong>Αλεξανδριδου Ελλη</strong>
+                    <p>Υπεύθυνη επικοινωνίας και εξυπηρέτησης</p>
+                  </div>
+                  <div class="owner-box">
+                    <strong>Qura Gentian</strong>
+                    <p>Υπεύθυνος συνεργασιών και συντονισμού έργων</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-card large">
+                <h2>Υπηρεσίες</h2>
+                <p>
+                  Η Pellaskal επικεντρώνεται αυτή την περίοδο σε
+                  <strong>τοποθέτηση σκαλωσιών</strong> με σοβαρότητα και σωστή
+                  συνεννόηση για κάθε έργο.
+                </p>
+                <div class="pill-row">
+                  <span class="pill">Τοποθέτηση Σκαλωσιών</span>
+                  <span class="pill">Επαγγελματική Εξυπηρέτηση</span>
+                  <span class="pill">Άμεση Επικοινωνία</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-page-right reveal delay-1">
+              <form
+                name="contact-page"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                class="contact-form contact-form-large"
+              >
+                <input type="hidden" name="form-name" value="contact-page" />
+                <input type="hidden" name="subject" value="Νέο μήνυμα από τη σελίδα επικοινωνίας Pellaskal" />
+                <p class="hidden-field">
+                  <label>
+                    Μην το συμπληρώσετε αυτό:
+                    <input name="bot-field" />
+                  </label>
+                </p>
+
+                <h2>Φόρμα Επικοινωνίας</h2>
+                <p class="form-intro">
+                  Συμπληρώστε τα στοιχεία σας και θα επικοινωνήσουμε μαζί σας το
+                  συντομότερο δυνατό.
+                </p>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="full-name">Ονοματεπώνυμο</label>
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      placeholder="Το όνομά σας"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company">Εταιρεία / Έργο</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      placeholder="Προαιρετικά"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-phone">Τηλέφωνο</label>
+                    <input
+                      type="tel"
+                      id="contact-phone"
+                      name="contact-phone"
+                      placeholder="π.χ. 69XXXXXXXX"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="contact-email"
+                      placeholder="example@email.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="subject">Θέμα</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject-line"
+                      placeholder="Περί τίνος πρόκειται το μήνυμά σας;"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="project-message">Μήνυμα</label>
+                    <textarea
+                      id="project-message"
+                      name="project-message"
+                      rows="6"
+                      placeholder="Γράψτε μας περισσότερες πληροφορίες για το έργο σας"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  Αποστολή Επικοινωνίας
+                </button>
+              </form>
+
+              <div class="map-card">
+                <h2>Google Maps</h2>
+                <p>
+                  Βάλτε εδώ το ακριβές σημείο της επιχείρησης για πιο σωστή
+                  προβολή στο χάρτη.
+                </p>
+                <div class="map-frame large">
+                  <iframe
+                    title="Pellaskal Google Map"
+                    src="https://www.google.com/maps?q=Pella%20Greece&z=10&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Pellaskal</h3>
+          <p>Επικοινωνήστε μαζί μας για επαγγελματικές λύσεις σκαλωσιάς.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Αρχική</a>
+          <a href="tel:6944146855">6944146855</a>
+          <a href="mailto:pellaskal@gmail.com">pellaskal@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
