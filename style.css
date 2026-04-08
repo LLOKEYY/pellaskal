@@ -428,6 +428,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.about-image-wrap {
+  margin-top: 28px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(22, 61, 116, 0.08);
+  box-shadow: var(--shadow-soft);
+  background: #ffffff;
+}
+
+.about-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
 
 .about-content p {
   margin: 0 0 18px;
@@ -804,6 +819,10 @@ img {
   .container {
     width: min(100% - 22px, var(--container));
   }
+
+  .about-image {
+  height: 240px;
+}
 
   .nav {
     min-height: 76px;
