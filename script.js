@@ -1,12 +1,45 @@
-const menuToggle = document.getElementById("menuToggle")
-const mobileMenu = document.getElementById("mobileMenu")
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
 
-if(menuToggle){
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+  });
 
-menuToggle.addEventListener("click",()=>{
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+  });
 
-mobileMenu.classList.toggle("open")
+  document.addEventListener("click", (event) => {
+    const clickedInsideMenu = mobileMenu.contains(event.target);
+    const clickedToggle = menuToggle.contains(event.target);
 
-})
+    if (!clickedInsideMenu && !clickedToggle) {
+      mobileMenu.classList.remove("open");
+    }
+  });
+}
 
+const revealElements = document.querySelectorAll(".reveal");
+
+if (revealElements.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  revealElements.forEach((element) => {
+    revealObserver.observe(element);
+  });
 }
