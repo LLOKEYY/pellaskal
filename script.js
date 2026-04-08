@@ -1,14 +1,14 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const mobileNav = document.querySelector(".mobile-nav");
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
 
-if (menuToggle && mobileNav) {
+if (menuToggle && mobileMenu) {
   menuToggle.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
+    mobileMenu.classList.toggle("open");
   });
 
-  mobileNav.querySelectorAll("a").forEach((link) => {
+  mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      mobileNav.classList.remove("active");
+      mobileMenu.classList.remove("open");
     });
   });
 }
@@ -19,7 +19,8 @@ const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.add("active");
+        revealObserver.unobserve(entry.target);
       }
     });
   },
@@ -31,18 +32,3 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
-
-const progressBar = document.querySelector(".page-progress");
-
-const updateProgress = () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-
-  if (progressBar) {
-    progressBar.style.width = `${progress}%`;
-  }
-};
-
-window.addEventListener("scroll", updateProgress);
-window.addEventListener("load", updateProgress);
