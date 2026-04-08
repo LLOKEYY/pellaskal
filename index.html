@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="siteHeader">
     <div class="container nav">
       <a href="index.html" class="logo" aria-label="Pellaskal">
         <img src="logo.png" alt="Pellaskal" class="logo-image" />
@@ -29,7 +29,7 @@
         <a href="epikoinonia.html" class="nav-button">Επικοινωνία</a>
       </nav>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού">
+      <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="mobileMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -45,6 +45,9 @@
 
   <main>
     <section class="hero hero-reimagined reveal" id="hero">
+      <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+
       <div class="container hero-panel">
         <div class="hero-main reveal">
           <p class="eyebrow">PELLASKAL</p>
@@ -56,9 +59,9 @@
           </h1>
 
           <p class="hero-description">
-            Με εμπειρία στον χώρο των τεχνικών έργων, η Pellaskal παρέχει ολοκληρωμένες λύσεις 
-            σκαλωσιάς που εξασφαλίζουν την ασφάλεια, σταθερότητα 
-            και αποτελεσματική υποστήριξη εργασιών.
+            Με εμπειρία στον χώρο των τεχνικών έργων, η Pellaskal παρέχει ολοκληρωμένες λύσεις
+            σκαλωσιάς που εξασφαλίζουν την ασφάλεια, τη σταθερότητα
+            και την αποτελεσματική υποστήριξη εργασιών.
           </p>
 
           <div class="hero-actions">
@@ -83,7 +86,7 @@
         </div>
 
         <div class="hero-side reveal reveal-delay">
-          <div class="hero-side-card">
+          <div class="hero-side-card interactive-panel">
             <span class="mini-label">ΤΟΠΟΘΕΤΗΣΗ ΣΚΑΛΩΣΙΩΝ</span>
             <h3>Στήριξη τεχνικών εργασιών με σωστή οργάνωση</h3>
             <p>
@@ -92,24 +95,24 @@
             </p>
           </div>
 
-          <div class="hero-side-callout">
+          <div class="hero-side-callout interactive-panel">
             <span class="mini-label">ΕΝΟΙΚΙΑΣΗ ΣΚΑΛΩΣΙΩΝ</span>
             <h3>Στήριξη τεχνικών εργασιών με σωστή οργάνωση</h3>
-            <p>
-              Σύντομα κοντά σας!
-            </p>
+            <p>Σύντομα κοντά σας!</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section about section-surface-white" id="about">
+      <div class="section-glow section-glow-soft" aria-hidden="true"></div>
+
       <div class="container section-grid">
         <div class="section-heading reveal">
           <p class="eyebrow">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</p>
           <h2>Η Pellaskal είναι δίπλα σε κάθε έργο.</h2>
 
-          <div class="about-image-wrap">
+          <div class="about-image-wrap image-card">
             <img src="about-image.png" alt="Pellaskal έργο σκαλωσιών" class="about-image" />
           </div>
         </div>
@@ -139,7 +142,7 @@
               <span class="feature-icon">✓</span>
               <div>
                 <strong>Επαγγελματική συνεργασία</strong>
-                <p>Καθαρή συνεννόηση, άμεση ανταπόκριση με κάθε πελάτη, και οργανωμένη παρουσία.</p>
+                <p>Καθαρή συνεννόηση, άμεση ανταπόκριση με κάθε πελάτη και οργανωμένη παρουσία.</p>
               </div>
             </div>
 
@@ -156,11 +159,13 @@
     </section>
 
     <section class="section services-reimagined section-surface-soft">
+      <div class="section-glow section-glow-right" aria-hidden="true"></div>
+
       <div class="container services-layout">
         <div class="services-intro reveal">
           <p class="eyebrow">ΤΙ ΠΡΟΣΦΕΡΟΥΜΕ</p>
           <h2>Υπηρεσίες με καθαρή δομή και σωστή υποστήριξη έργων</h2>
-           <p>
+          <p>
             Αντί για κλασικές κάρτες, η ενότητα αυτή παρουσιάζει πιο άμεσα και
             οργανωμένα το τι προσφέρει η Pellaskal, με έμφαση στην πρακτική αξία
             κάθε συνεργασίας.
@@ -171,14 +176,17 @@
               Εστίαση στην τοποθέτηση, στην οργάνωση και στην υπεύθυνη επικοινωνία.
             </span>
           </div>
-    
         </div>
 
         <div class="services-stack">
           <div class="service-row reveal">
+            <div class="service-accent" aria-hidden="true"></div>
             <div class="service-index">01</div>
             <div class="service-content">
-              <h3>Τοποθέτηση σκαλωσιών</h3>
+              <div class="service-topline">
+                <h3>Τοποθέτηση σκαλωσιών</h3>
+                <span class="service-status">Διαθέσιμο</span>
+              </div>
               <p>
                 Σωστή και επαγγελματική τοποθέτηση σκαλωσιών με βάση τις ανάγκες
                 κάθε έργου.
@@ -191,9 +199,13 @@
           </div>
 
           <div class="service-row reveal reveal-delay">
+            <div class="service-accent" aria-hidden="true"></div>
             <div class="service-index">02</div>
             <div class="service-content">
-              <h3>Οργάνωση τεχνικής υποστήριξης</h3>
+              <div class="service-topline">
+                <h3>Οργάνωση τεχνικής υποστήριξης</h3>
+                <span class="service-status">Διαθέσιμο</span>
+              </div>
               <p>
                 Σαφής συνεννόηση και οργανωμένη προετοιμασία ώστε το έργο να
                 προχωρά με σωστή βάση και υπευθυνότητα.
@@ -206,9 +218,13 @@
           </div>
 
           <div class="service-row reveal reveal-delay-2">
+            <div class="service-accent" aria-hidden="true"></div>
             <div class="service-index">03</div>
             <div class="service-content">
-              <h3>Επαγγελματική συνεργασία</h3>
+              <div class="service-topline">
+                <h3>Επαγγελματική συνεργασία</h3>
+                <span class="service-status">Διαθέσιμο</span>
+              </div>
               <p>
                 Συνεργασία με σοβαρότητα, συνέπεια και καθαρή επικοινωνία,
                 ώστε κάθε πελάτης να γνωρίζει ότι έχει σωστή υποστήριξη.
@@ -220,13 +236,21 @@
             </div>
           </div>
 
-          <div class="service-row reveal">
+          <div class="service-row service-row-soon reveal">
+            <div class="service-accent" aria-hidden="true"></div>
             <div class="service-index">04</div>
             <div class="service-content">
-              <h3>Ενοικίαση σκαλωσιών</h3>
+              <div class="service-topline">
+                <h3>Ενοικίαση σκαλωσιών</h3>
+                <span class="service-status service-status-soon">Σύντομα</span>
+              </div>
               <p>
-                Σύντομα κοντά σας!
+                Η υπηρεσία ενοικίασης σκαλωσιών θα είναι σύντομα διαθέσιμη.
               </p>
+              <div class="service-tags">
+                <span>νέα υπηρεσία</span>
+                <span>coming soon</span>
+              </div>
             </div>
           </div>
         </div>
