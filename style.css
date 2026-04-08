@@ -72,35 +72,61 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .logo-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, var(--primary), #2f67b5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #163d74 0%, #28589c 100%);
   color: white;
+  box-shadow: 0 14px 28px rgba(22, 61, 116, 0.16);
+}
+
+.logo-mark-large {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+.logo-p {
+  position: relative;
+  z-index: 2;
+  font-size: 1.45rem;
   font-weight: 800;
-  box-shadow: var(--shadow-soft);
+  letter-spacing: -0.03em;
+}
+
+.logo-line {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: rotate(18deg);
+  opacity: 0.8;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.05;
+  line-height: 1.02;
 }
 
 .logo-text strong {
-  font-size: 1rem;
-  letter-spacing: -0.02em;
+  font-size: 1.45rem;
+  letter-spacing: -0.03em;
+  color: var(--text);
 }
 
 .logo-text span {
   color: var(--text-soft);
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .desktop-nav {
@@ -266,31 +292,34 @@ img {
   width: 100%;
 }
 
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
+.hero-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 34px;
+  max-width: 760px;
 }
 
-.badge-card {
-  flex: 1 1 220px;
-  background: rgba(255, 255, 255, 0.75);
+.hero-highlight {
+  background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(22, 61, 116, 0.08);
-  border-radius: var(--radius-md);
-  padding: 18px;
+  border-radius: 20px;
+  padding: 20px 22px;
   box-shadow: var(--shadow-soft);
 }
 
-.badge-card strong {
+.hero-highlight strong {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: var(--primary);
 }
 
-.badge-card span {
+.hero-highlight p {
+  margin: 0;
   color: var(--text-soft);
+  line-height: 1.7;
   font-size: 0.95rem;
-  line-height: 1.6;
 }
 
 .hero-visual {
@@ -416,17 +445,6 @@ img {
   padding: 88px 0;
 }
 
-.intro-strip {
-  padding-top: 0;
-}
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.intro-card,
 .info-card,
 .contact-panel,
 .form-panel,
@@ -817,11 +835,11 @@ img {
     display: inline-block;
   }
 
-  .intro-grid,
   .cards-grid,
-  .mini-cards {
-    grid-template-columns: 1fr;
-  }
+.mini-cards,
+.hero-highlights {
+  grid-template-columns: 1fr;
+}
 
   .hero {
     padding-top: 56px;
@@ -849,15 +867,23 @@ img {
     min-height: 74px;
   }
 
-  .logo-mark {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-  }
+.logo-mark-large {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+}
 
-  .logo-text span {
-    font-size: 0.75rem;
-  }
+.logo-p {
+  font-size: 1.2rem;
+}
+
+.logo-text strong {
+  font-size: 1.15rem;
+}
+
+.logo-text span {
+  font-size: 0.78rem;
+}
 
   .contact-row {
     grid-template-columns: 1fr;
