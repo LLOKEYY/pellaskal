@@ -72,32 +72,16 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-}
-
-.logo-image {
-  width: 82px;
-  height: 82px;
-  object-fit: contain;
+  justify-content: center;
   flex-shrink: 0;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.03;
-}
-
-.logo-text strong {
-  font-size: 1.45rem;
-  letter-spacing: -0.03em;
-  color: var(--text);
-}
-
-.logo-text span {
-  color: var(--text-soft);
-  font-size: 1rem;
-  font-weight: 600;
+.logo-image {
+  width: 180px;
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+  display: block;
 }
 
 .desktop-nav {
@@ -825,18 +809,11 @@ img {
     min-height: 76px;
   }
 
-  .logo-image {
-    width: 58px;
-    height: 58px;
-  }
-
-  .logo-text strong {
-    font-size: 1.1rem;
-  }
-
-  .logo-text span {
-    font-size: 0.76rem;
-  }
+.logo-image {
+  width: 140px;
+  max-height: 56px;
+  height: auto;
+}
 
   .contact-row {
     grid-template-columns: 1fr;
