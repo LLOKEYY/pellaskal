@@ -944,6 +944,102 @@ textarea {
     linear-gradient(180deg, rgba(255, 250, 243, 0.98) 0%, rgba(255, 255, 255, 0.96) 100%);
 }
 
+/* Testimonials */
+
+.testimonials {
+  overflow: hidden;
+}
+
+.testimonials-heading {
+  margin-bottom: 42px;
+}
+
+.testimonials-heading h2 {
+  margin: 0;
+  font-size: clamp(2.1rem, 3.5vw, 3.3rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 39, 67, 0.08);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: rgba(22, 61, 116, 0.12);
+}
+
+.testimonial-stars {
+  color: #FBBC04;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.testimonial-text {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.85;
+  font-size: 1.02rem;
+  flex: 1;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.testimonial-author strong {
+  display: block;
+  font-size: 0.97rem;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.testimonial-author span {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--text-soft);
+}
+
+.testimonial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(66, 133, 244, 0.07);
+  border: 1px solid rgba(66, 133, 244, 0.16);
+  color: #3c78d8;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* Contact */
 
 .page-hero {
@@ -1252,7 +1348,8 @@ textarea {
   }
 
   .hero-meta,
-  .mini-cards {
+  .mini-cards,
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
 
