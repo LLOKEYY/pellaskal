@@ -169,15 +169,15 @@ textarea {
 }
 
 .logo-image {
-  width: 172px;
-  max-height: 62px;
+  width: 220px;
+  max-height: 80px;
   object-fit: contain;
   transition: transform var(--transition), width var(--transition), max-height var(--transition);
 }
 
 .header.scrolled .logo-image {
-  width: 156px;
-  max-height: 56px;
+  width: 200px;
+  max-height: 72px;
 }
 
 .desktop-nav {
@@ -1383,13 +1383,13 @@ textarea {
   }
 
   .logo-image {
-    width: 145px;
-    max-height: 56px;
+    width: 180px;
+    max-height: 68px;
   }
 
   .header.scrolled .logo-image {
-    width: 138px;
-    max-height: 52px;
+    width: 165px;
+    max-height: 62px;
   }
 
   .hero.hero-reimagined {
